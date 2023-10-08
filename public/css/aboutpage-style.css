@@ -1,0 +1,78 @@
+ #about {
+        height: 100vh;
+    }
+.col-1 {
+        flex-basis: 30%!important;
+    }
+#my-image{
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 80%;
+    height: 70%;
+    border-radius: 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.col-2{
+    flex-basis: 60% !important;
+    margin-top: 40px!important;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+#about-me-heading{
+    font-size: 10vh;
+
+}
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #ff004f;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 60%;
+}
+
+.tab-contents ul li{
+list-style: none;
+margin: 10px 0 ;
+margin-left: 0px;
+}
+
+.tab-contents ul li span{
+    font-size: 14px;
+    color: red;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}

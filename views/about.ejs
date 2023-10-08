@@ -2,10 +2,43 @@
 <%- include("./partials/head.ejs") %>
 
 <body>
+  <div id="about">
   <%- include("./partials/navbar.ejs") %>
-
+    <div class="container">
+      <div class="row">
+      <div class="col col-1">
+        <img src="/images/my-image.png" id="my-image">
+      </div>
+      <div class="col col-2">
+        <h1 id="about-me-heading">About me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga debitis ipsum eos similique! Beatae omnis fuga consectetur facilis, iusto totam esse, quos labore molestias corporis veniam repellendus, officia nam cumque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur repudiandae iure adipisci quis libero rerum, ad optio dolores quisquam magnam pariatur impedit ex, quas labore fuga! Perspiciatis est ea hic?</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Web Development</span><br>Full Stack Web Developement</li>
+            <li><span>Windows Application</span><br>C# based Windows application Developer</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Web Development</span><br>Full Stack Web Developement</li>
+            <li><span>Windows Application</span><br>C# based Windows application Developer</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2025</span><br>Advance Diploma in Software Technology: Artificial Intellegence</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <%- include("./partials/footer.ejs") %>
+    </div>
   
-
-  <%- include("./partials/footer.ejs") %>
+  </div>
 </body>
 </html>
