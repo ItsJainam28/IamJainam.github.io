@@ -1,0 +1,12 @@
+footer {
+    text-align: center;
+    padding: 20px 0; /* Adjust the padding to control the vertical positioning */
+    position: relative;
+    bottom: 5px;
+}
+
+.copyright {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #555; /* Set the text color */
+    margin: 0; /* Remove default margins */
+}

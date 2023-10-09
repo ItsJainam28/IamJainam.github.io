@@ -1,5 +1,6 @@
 #project{
     padding-top: 50px !important;
+    height: fit-content;
 }
 .project-heading{
     font-size: 10vh;
