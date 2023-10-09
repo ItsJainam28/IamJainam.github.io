@@ -1,11 +1,32 @@
 <html lang="en">
 <%- include("./partials/head.ejs") %>
-
 <body>
   <%- include("./partials/navbar.ejs") %>
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="col contact-col-left">
+            <h1 class="contact-heading">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope" style="color: #ff2e2e;"></i>jainampatel68@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #ff0000;"></i>+1 437-429-3580</p>
 
-  
-
+            <div class="social-icons">
+              <a href="https://twitter.com/ItzJainam"><i class="fa-brands fa-x-twitter" style="color: #ff0000;"></i></a>
+              <a href="https://www.instagram.com/itz_.jainam/"><i class="fa-brands fa-instagram" style="color: #ff0000;"></i></a>
+              <a href="https://www.linkedin.com/in/jainam-l-patel-020722257/"><i class="fa-brands fa-linkedin" style="color: #ff0000;"></i></a>
+            </div>
+          </div>
+          <div class="col contact-col-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Type your brief message here"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
   <%- include("./partials/footer.ejs") %>
 </body>
 </html>

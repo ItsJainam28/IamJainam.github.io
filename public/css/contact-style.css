@@ -1,0 +1,27 @@
+.contact-col-left{
+    flex-basis: 35%!important;
+}
+.contact-col-right{
+    flex-basis: 60%!important;
+}
+.contact-heading{
+    font-size: 10vh;
+
+}
+.contact-col-left p{
+
+    margin-top: 30px;
+}
+
+.contact-col-left i{
+
+    margin-right: 10px;
+}
+
+.social-icons a{
+text-decoration: none;
+font-size: 30px;
+margin-right: 15px;
+display: inline-block;
+}
+

@@ -1,0 +1,28 @@
+#services{
+    width: 100vh;
+}
+.services-heading{
+    font-size: 10vh;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+
+}
+.card{
+    margin-top: 15%;
+}
+
+.cards{
+    width: 100rem !important;
+}
+
+.card-title{
+    font-weight: 800 !important;
+    font-family: 'Raleway'!important;
+    color: white!important;
+}
+.card-text{
+    color: white!important;
+    font-family: 'Josefin Sans'!important;
+}
+
