@@ -1,44 +1,51 @@
-.contact-col-left{
+/* Styling for the left column in the contact section */
+.contact-col-left {
     flex-basis: 35%!important;
     margin-top: 7%!important;
 }
-.contact-col-right{
+
+/* Styling for the right column in the contact section */
+.contact-col-right {
     flex-basis: 60%!important;
 }
-.contact-heading{
+
+/* Styling for the contact heading */
+.contact-heading {
     font-size: 10vh;
     font-family: 'Raleway';
     font-weight: 600;
-    
-
 }
-.contact-col-left p{
 
+/* Styling for paragraphs within the left column */
+.contact-col-left p {
     margin-top: 30px;
     font-size: 25px;
-    font-family:'Josefin sans';
+    font-family: 'Josefin sans';
 }
 
-.contact-col-left i{
-    font-size:25px;
+/* Styling for icons within the left column */
+.contact-col-left i {
+    font-size: 25px;
     margin-right: 15px;
 }
 
-.social-icons a{
-color: red;
-text-decoration: none;
-font-size: 30px;
-margin-right: 15px;
-display: inline-block;
-transition: transform(0.5px);
+/* Styling for social media icons */
+.social-icons a {
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform(0.5px);
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: white;
     transform: translateY(-5px);
-    }
+}
 
-.download-cv-button{
+/* Styling for the "Download CV" button */
+.download-cv-button {
     background-color: #ff0000;
     display: inline-block;
     margin: 50px auto;
@@ -49,17 +56,16 @@ transition: transform(0.5px);
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family:'Josefin sans';
- 
+    font-family: 'Josefin sans';
 }
 
-.download-cv-button:hover{
+.download-cv-button:hover {
     background-color: white;
     color: black;
 }
 
-
-.submit-button{
+/* Styling for the "Submit" button */
+.submit-button {
     background-color: #ff0000;
     display: inline-block;
     margin: 50px auto;
@@ -70,20 +76,24 @@ transition: transform(0.5px);
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family:'Josefin sans';
+    font-family: 'Josefin sans';
     margin: 0 auto;
 }
-.submit-button:hover{
+
+.submit-button:hover {
     background-color: white;
     color: black;
 }
 
-.contact-col-right form{
+/* Styling for the form within the right column */
+.contact-col-right form {
     width: 90%;
     margin-top: 12%;
 }
 
-form input, form textarea{
+/* Styling for input and textarea elements within the form */
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;

@@ -1,42 +1,46 @@
-#project{
+/* Styling for the "project" section */
+#project {
     padding-top: 50px !important;
     height: fit-content;
 }
-.project-heading{
+
+/* Styling for the project heading */
+.project-heading {
     font-size: 10vh;
     margin-top: -30px;
 }
-.project-images{
+
+/* Styling for project images */
+.project-images {
     width: 100%;
     margin-top: 10px;
-    border-radius:20px !important;
+    border-radius: 20px !important;
     display: block;
     position: relative;
     overflow: hidden;
-    transition: transform 0.6;
+    transition: transform 0.6s; /* Add a transition effect for scaling */
 }
 
-
-.layer{
+/* Styling for the layer over project images */
+.layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow: hidden!important;
+    overflow: hidden !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    transition: height 0.5s;
-
-
+    transition: height 0.5s; /* Add a transition effect for height change */
 }
 
-.project-col{
+/* Styling for the project columns */
+.project-col {
     overflow: hidden !important;
     position: relative !important;
     height: 90%;
@@ -45,21 +49,27 @@
     justify-content: flex-end;
 }
 
-.project-row{
+/* Styling for the project rows */
+.project-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr))!important;
-    grid-gap: 40px!important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    grid-gap: 40px !important;
     margin-top: 50px;
 }
-.layer h3{
+
+/* Styling for headings within the layer */
+.layer h3 {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 20px;
 }
 
-.project-images:hover{
-    transform: scale(1.1);
+/* Styling for project images on hover */
+.project-images:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
 }
-.project-col:hover .layer{
-    height: 100%;
+
+/* Styling for expanding the layer on hover */
+.project-col:hover .layer {
+    height: 100%; /* Expand the layer to 100% height on hover */
 }

@@ -1,51 +1,54 @@
-/* Adding the Image  */
-#home{
+/* Styling for the "home" section with a background image */
+#home {
     width: 100%;
-    height: 100vh;
-    background-image:url(/images/background-temp.png);
+    height: 100vh; /* Occupies 100% of the viewport height */
+    background-image: url(/images/background-temp.png);
     background-size: 1000px;
     background-position: left;
     background-repeat: no-repeat;
 }
 
-.main-content{
+/* Styling for the main content within the "home" section */
+.main-content {
     margin-top: 10%;
     margin-left: 55%;
     font-size: 20px;
     font-family: 'Raleway';
+    height: 100vh; /* Occupies 100% of the viewport height */
+    display: flex; /* Display the content as a flex container */
+    flex-direction: column; /* Stack child elements vertically */
+    padding: 20px;
 }
 
-.main-content p{
+/* Styling for paragraphs within the main content */
+.main-content p {
     margin-left: 3px;
-
 }
 
-.main-content h1{
+/* Styling for the main content's main heading */
+.main-content h1 {
     font-size: 11vh;
     margin-top: -23px;
     font-family: 'Raleway';
     font-weight: 600;
-    
 }
-.main-content h2{
+
+/* Styling for subheadings within the main content */
+.main-content h2 {
     font-size: 5vh;
     margin-top: 0px;
     font-family: 'Raleway';
     font-weight: 600;
-    
 }
-.main-content span{
+
+/* Styling for the "span" elements within the main content */
+.main-content span {
     color: red;
-    
 }
-.main-content {
-    height: 100vh; /* Occupies 100% of the viewport height */
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-.main-content h2 span{
+
+/* Styling for specific spans within h2 elements */
+.main-content h2 span {
     color: white;
     font-style: italic;
-    font-family:  'Josefin Sans';
+    font-family: 'Josefin Sans';
 }

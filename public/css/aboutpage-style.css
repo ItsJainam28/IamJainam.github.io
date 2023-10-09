@@ -1,82 +1,99 @@
- /* Making about tab as big as the viewport */
- #about {
-        height: 100vh;
-    }
-    /* Making the colon 30% of flex box */
+/* Making the "about" section as big as the viewport */
+#about {
+    height: 100vh; /* Set the height of the "about" section to 100% of the viewport height */
+}
+
+/* Making the left column 30% of the flexbox */
 .col-1 {
-        flex-basis: 30%!important;
-    }
-    /* Adjusting the size of image  */
-#my-image{
-    margin-top: 40px;
-    margin-left: 30px;
-    width: 80%;
-    height: 70%;
-    border-radius: 15px;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    flex-basis: 30%!important; /* Set the width of the left column to 30% of its parent container */
 }
 
-.col-2{
-    flex-basis: 60% !important;
-    margin-top: 40px!important;
-}
-.container{
-    width: 100%;
-    height: 100%;
-}
-
-#about-me-heading{
-    font-size: 10vh;
-
-}
-/* For the changes in the skills, exprerience and education tab */
-.tab-titles{
-    display:flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    background: #ff004f;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+/* Adjusting the size of the image */
+#my-image {
+    margin-top: 40px; /* Add top margin to the image */
+    margin-left: 30px; /* Add left margin to the image */
+    width: 80%; /* Set the width of the image to 80% of its container */
+    height: 70%; /* Set the height of the image to 70% of its container */
+    border-radius: 15px; /* Apply border-radius for rounded corners */
 }
 
-.tab-links.active-link::after{
-    width: 60%;
+/* Styling for the "row" container */
+.row {
+    display: flex; /* Use flexbox layout for the "row" container */
+    flex-wrap: wrap; /* Allow the flex items to wrap to the next row if needed */
+    justify-content: space-between; /* Distribute space between flex items */
+    width: 100%; /* Set the width of the "row" container to 100% */
+    height: 100%; /* Set the height of the "row" container to 100% */
 }
 
-.tab-contents ul li{
-list-style: none;
-margin: 10px 0 ;
-margin-left: 0px;
+/* Adjusting the size of the right column */
+.col-2 {
+    flex-basis: 60% !important; /* Set the width of the right column to 60% of its parent container */
+    margin-top: 40px!important; /* Add top margin to the right column */
 }
 
-.tab-contents ul li span{
-    font-size: 14px;
-    color: red;
+/* Styling for the main container */
+.container {
+    width: 100%; /* Set the width of the container to 100% */
+    height: 100%; /* Set the height of the container to 100% */
 }
 
-.tab-contents{
-    display: none;
+/* Styling for the "about-me-heading" */
+#about-me-heading {
+    font-size: 10vh; /* Set the font size of the heading to 10% of the viewport height */
 }
 
-.tab-contents.active-tab{
-    display: block;
+/* Styling for the tab titles */
+.tab-titles {
+    display: flex; /* Use flexbox layout for the tab titles */
+    margin: 20px 0 40px; /* Add margins to the tab titles */
+}
+
+/* Styling for the tab links */
+.tab-links {
+    margin-right: 50px; /* Add right margin to the tab links */
+    font-size: 18px; /* Set the font size of the tab links */
+    font-weight: 500; /* Set the font weight of the tab links */
+    cursor: pointer; /* Set cursor to pointer for interactivity */
+    position: relative; /* Set the position to relative for pseudo-element styling */
+}
+
+/* Styling for the tab links' active state */
+.tab-links::after {
+    content: ''; /* Add an empty content for the pseudo-element */
+    width: 0; /* Set the initial width of the pseudo-element to 0 */
+    height: 3px; /* Set the height of the pseudo-element */
+    position: absolute; /* Set the position to absolute for precise placement */
+    background: #ff004f; /* Set the background color of the pseudo-element */
+    left: 0; /* Position the pseudo-element at the left */
+    bottom: -8px; /* Position the pseudo-element below the tab link */
+    transition: 0.5s; /* Add a transition effect for smooth width change */
+}
+
+/* Styling for the tab links when active */
+.tab-links.active-link::after {
+    width: 60%; /* Increase the width of the pseudo-element to 60% when the link is active */
+}
+
+/* Styling for the list items in tab contents */
+.tab-contents ul li {
+    list-style: none; /* Remove list bullets */
+    margin: 10px 0; /* Add margin to the list items */
+    margin-left: 0px; /* Reset the left margin */
+}
+
+/* Styling for spans within list items */
+.tab-contents ul li span {
+    font-size: 14px; /* Set the font size for spans */
+    color: red; /* Set the text color for spans */
+}
+
+/* Styling for tab contents */
+.tab-contents {
+    display: none; /* Hide tab contents by default */
+}
+
+/* Styling for active tab contents */
+.tab-contents.active-tab {
+    display: block; /* Display active tab contents */
 }
